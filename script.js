@@ -24,11 +24,11 @@ const translations = {
   nav_contact: { en: "Contact", nl: "Contact", es: "Contacto" },
 
   header_book_btn: { en: "New Client", nl: "Nieuwe Klant", es: "Cliente Nuevo" },
-  header_login_btn: { en: "Client Login", nl: "Klantenlogin", es: "Acceso Clientes" },
+  header_login_btn: { en: "Client Login", nl: "Klantenlogin", es: "Iniciar Sesión" },
   cta_new_client_btn: { en: "New Client? Book Now", nl: "Nieuwe klant? Boek nu", es: "¿Cliente nuevo? Reserva ahora" },
   cta_returning_client_btn: { en: "Returning Client? Log In", nl: "Bestaande klant? Log in", es: "¿Cliente existente? Inicia sesión" },
-  menu_open: { en: "Open menu", nl: "Open menu", es: "Abrir menú" },
-  menu_close: { en: "Close menu", nl: "Sluit menu", es: "Cerrar menú" },
+  menu_open: { en: "Open menu", nl: "Menu openen", es: "Abrir menú" },
+  menu_close: { en: "Close menu", nl: "Menu sluiten", es: "Cerrar menú" },
 
   hero_headline_1: { en: "Your home.", nl: "Jouw huis.", es: "Tu hogar." },
   hero_headline_2: { en: "Their comfort.", nl: "Hun comfort.", es: "Su comodidad." },
@@ -36,7 +36,7 @@ const translations = {
   scroll_indicator_label: { en: "Scroll to explore", nl: "Scroll om te ontdekken", es: "Desplázate para explorar" },
 
   services_title: { en: "Services", nl: "Diensten", es: "Servicios" },
-  services_lede: { en: "Thoughtful, hands-on care because your pet deserves nothing less.", nl: "Attente, persoonlijke zorg, omdat je huisdier niet minder verdient.", es: "Cuidado atento y personal, porque tu mascota no merece menos." },
+  services_lede: { en: "Thoughtful, hands-on care because your pet deserves nothing less.", nl: "Zorgzame, persoonlijke aandacht, omdat je huisdier niet minder verdient.", es: "Cuidado atento y personal, porque tu mascota no merece menos." },
 
   service_walking_title: { en: "Dog Walking", nl: "Hondenuitlaatservice", es: "Paseo de Perros" },
   service_walking_desc: { en: "Fresh air, exercise, and plenty of sniffing time. Solo or small-group walks tailored to your dog's energy level and pace.", nl: "Frisse lucht, beweging en volop tijd om te snuffelen. Individuele of kleine groepswandelingen, afgestemd op het energieniveau en tempo van je hond.", es: "Aire fresco, ejercicio y mucho tiempo para olfatear. Paseos individuales o en grupos pequeños, adaptados al nivel de energía y ritmo de tu perro." },
@@ -44,7 +44,7 @@ const translations = {
   service_petsitting_desc: { en: "Overnight stays at your home so your pets keep their normal routine. Ideal for longer trips or pets who do best with constant company.", nl: "Overnachtingen bij jou thuis, zodat je huisdieren hun normale routine behouden. Ideaal voor langere reizen of huisdieren die het best gedijen bij voortdurend gezelschap.", es: "Estancias nocturnas en tu casa para que tus mascotas mantengan su rutina normal. Ideal para viajes más largos o mascotas que están mejor con compañía constante." },
   service_dropin_title: { en: "Drop-in Visits", nl: "Bezoekjes aan huis", es: "Visitas a Domicilio" },
   service_dropin_desc: { en: "A friendly check-in at home for feeding, fresh water, playtime, and cuddles — great for cats, puppies, or a midday visit.", nl: "Een gezellig bezoekje thuis voor eten, vers water, speeltijd en knuffels — ideaal voor katten, puppy's of een tussendoortje in de middag.", es: "Una visita amistosa en casa para alimentar, agua fresca, tiempo de juego y mimos — perfecta para gatos, cachorros o una visita a mediodía." },
-  service_grooming_title: { en: "Grooming", nl: "Verzorging", es: "Aseo" },
+  service_grooming_title: { en: "Grooming", nl: "Vachtverzorging", es: "Peluquería" },
   service_grooming_desc: { en: "Bath (at your home) and nail trims to keep your pet clean and comfortable — convenient, low-stress grooming without ever leaving the house.", nl: "Bad (bij jou thuis) en nagels knippen om je huisdier schoon en comfortabel te houden — handige, stressvrije verzorging zonder de deur uit te hoeven.", es: "Baño (en tu casa) y corte de uñas para mantener a tu mascota limpia y cómoda — servicios de aseo convenientes y de bajo estrés sin salir de casa." },
   service_book_btn: { en: "Book Now", nl: "Boek Nu", es: "Reservar Ahora" },
 
@@ -73,7 +73,7 @@ const translations = {
   whatsapp_btn: { en: "Message on WhatsApp", nl: "Bericht via WhatsApp", es: "Mensaje por WhatsApp" },
 
   pricing_hero_title: { en: "Pricing", nl: "Prijzen", es: "Precios" },
-  pricing_hero_lede: { en: "Simple, transparent pricing because your pet's care should never come with surprises.", nl: "Eenvoudige, transparante prijzen, want de zorg voor je huisdier mag nooit verrassingen bevatten.", es: "Precios simples y transparentes, porque el cuidado de tu mascota nunca debería tener sorpresas." },
+  pricing_hero_lede: { en: "Simple, transparent pricing because your pet's care should never come with surprises.", nl: "Eenvoudige, transparante prijzen, want de zorg voor je huisdier mag nooit voor verrassingen zorgen.", es: "Precios simples y transparentes, porque el cuidado de tu mascota nunca debería tener sorpresas." },
   pricing_col_service: { en: "Service", nl: "Dienst", es: "Servicio" },
   pricing_col_price: { en: "Price", nl: "Prijs", es: "Precio" },
   pricing_col_size: { en: "Size", nl: "Grootte", es: "Tamaño" },
@@ -90,22 +90,22 @@ const translations = {
   pricing_visit60: { en: "60-minute visit", nl: "Bezoek van 60 minuten", es: "Visita de 60 minutos" },
   pricing_extra_cat: { en: "Additional cat", nl: "Extra kat", es: "Gato adicional" },
 
-  pricing_overnight_title: { en: "Overnight Pet Sitting", nl: "Overnachting bij Oppas", es: "Pernoctación con Cuidado de Mascotas" },
+  pricing_overnight_title: { en: "Overnight Pet Sitting", nl: "Nachtoppas", es: "Cuidado Nocturno de Mascotas" },
   pricing_overnight_note: { en: "(at client's home)", nl: "(bij de klant thuis)", es: "(en casa del cliente)" },
-  pricing_overnight_dog: { en: "Overnight stay (dog)", nl: "Overnachting (hond)", es: "Pernoctación (perro)" },
-  pricing_overnight_cat: { en: "Overnight stay (cat)", nl: "Overnachting (kat)", es: "Pernoctación (gato)" },
+  pricing_overnight_dog: { en: "Overnight stay (dog)", nl: "Overnachting (hond)", es: "Cuidado nocturno (perro)" },
+  pricing_overnight_cat: { en: "Overnight stay (cat)", nl: "Overnachting (kat)", es: "Cuidado nocturno (gato)" },
 
-  pricing_grooming_title: { en: "Grooming Add-Ons", nl: "Extra Verzorgingsdiensten", es: "Servicios de Aseo Adicionales" },
+  pricing_grooming_title: { en: "Grooming Add-Ons", nl: "Extra Vachtverzorging", es: "Servicios de Peluquería" },
   pricing_bath_dog_label: { en: "Bath (dog, by size):", nl: "Bad (hond, op grootte):", es: "Baño (perro, según tamaño):" },
   pricing_size_small: { en: "Small (up to 10kg)", nl: "Klein (tot 10kg)", es: "Pequeño (hasta 10kg)" },
-  pricing_size_medium: { en: "Medium (10–25kg)", nl: "Middel (10-25kg)", es: "Mediano (10–25kg)" },
+  pricing_size_medium: { en: "Medium (10–25kg)", nl: "Middelgroot (10-25kg)", es: "Mediano (10–25kg)" },
   pricing_size_large: { en: "Large (25–40kg)", nl: "Groot (25-40kg)", es: "Grande (25–40kg)" },
   pricing_size_xl: { en: "Extra Large (40kg+)", nl: "Extra groot (40kg+)", es: "Extra grande (40kg+)" },
   pricing_bath_cat: { en: "Bath (cat, any size)", nl: "Bad (kat, alle groottes)", es: "Baño (gato, cualquier tamaño)" },
   pricing_nail_dog: { en: "Nail trim (dog)", nl: "Nagels knippen (hond)", es: "Corte de uñas (perro)" },
   pricing_nail_cat: { en: "Nail trim (cat)", nl: "Nagels knippen (kat)", es: "Corte de uñas (gato)" },
 
-  pricing_other_title: { en: "Other Add-Ons", nl: "Overige Toeslagen", es: "Otros Adicionales" },
+  pricing_other_title: { en: "Other Add-Ons", nl: "Overige Extra's", es: "Otros Extras" },
   pricing_holiday: { en: "Holiday surcharge", nl: "Feestdagentoeslag", es: "Recargo por días festivos" },
   pricing_vet_transport: { en: "Vet visit / medication pickup transport", nl: "Vervoer dierenarts / medicatie ophalen", es: "Transporte a veterinario / recogida de medicación" },
 
@@ -113,7 +113,7 @@ const translations = {
   book_title: { en: "Book a Visit", nl: "Boek een Afspraak", es: "Reservar una Visita" },
   book_lede: { en: "Whether it's your first time booking or you're a familiar face, getting started takes less than a minute.", nl: "Of het nu je eerste boeking is of je een bekend gezicht bent, je bent binnen een minuut klaar.", es: "Ya sea tu primera reserva o ya me conoces, empezar toma menos de un minuto." },
 
-  footer_text: { en: "De Dierenclub Pet Sitting · Serving Amsterdam, Netherlands 🐾", nl: "De Dierenclub Pet Sitting · Actief in Amsterdam, Nederland 🐾", es: "De Dierenclub Pet Sitting · Sirviendo a Ámsterdam, Países Bajos 🐾" }
+  footer_text: { en: "Serving Amsterdam, Netherlands 🐾", nl: "Actief in Amsterdam, Nederland 🐾", es: "Sirviendo a Ámsterdam, Países Bajos 🐾" }
 };
 
 function applyLanguage(lang) {
