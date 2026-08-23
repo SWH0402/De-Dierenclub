@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">Pricing | De Dierenclub Pet Sitting Amsterdam</title>
+<meta id="metaDescription" name="description" content="Clear, transparent pricing for dog walking, drop-in visits, overnight pet sitting, and grooming add-ons in Amsterdam.">
+<script>
+  window.PAGE_META = {
+    en: {
+      title: "Pricing | De Dierenclub Pet Sitting Amsterdam",
+      description: "Clear, transparent pricing for dog walking, drop-in visits, overnight pet sitting, and grooming add-ons in Amsterdam."
+    },
+    nl: {
+      title: "Prijzen | De Dierenclub Pet Sitting Amsterdam",
+      description: "Duidelijke, transparante prijzen voor hondenuitlaatservice, oppasbezoeken, overnachtingen en extra verzorgingsdiensten in Amsterdam."
+    },
+    es: {
+      title: "Precios | De Dierenclub Pet Sitting Ámsterdam",
+      description: "Precios claros y transparentes para paseo de perros, visitas a domicilio, pernoctación y servicios de aseo adicionales en Ámsterdam."
+    }
+  };
+</script>
+<!-- TODO: replace placeholder domain below with the real domain once the site is deployed -->
+<link rel="alternate" hreflang="en" href="https://www.dedierenclubpetsitting.nl/pricing.html">
+<link rel="alternate" hreflang="nl" href="https://www.dedierenclubpetsitting.nl/pricing.html">
+<link rel="alternate" hreflang="es" href="https://www.dedierenclubpetsitting.nl/pricing.html">
+<link rel="alternate" hreflang="x-default" href="https://www.dedierenclubpetsitting.nl/pricing.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="floating-bar is-scrolled">
+  <button type="button" class="hamburger" id="menuToggle" aria-expanded="false" aria-controls="navOverlay" data-i18n-aria-label="menu_open" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <a class="floating-brand" href="index.html#home">De Dierenclub</a>
+  <div class="floating-right">
+    <div class="header-cta">
+      <a class="btn btn-primary btn-sm" href="https://www.timetopet.com/portal/dedierenclub/create-account" target="_blank" rel="noopener" data-i18n="header_book_btn">New Client</a>
+      <a class="btn btn-outline btn-sm" href="https://www.timetopet.com/portal/dedierenclub" target="_blank" rel="noopener" data-i18n="header_login_btn">Client Login</a>
+    </div>
+    <div class="lang-toggle" role="group" aria-label="Language selector">
+      <button type="button" class="lang-btn active" id="langEnBtn" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn" id="langNlBtn" data-lang="nl" aria-pressed="false">NL</button>
+      <button type="button" class="lang-btn" id="langEsBtn" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+  </div>
+</div>
+
+<nav class="nav-overlay" id="navOverlay" aria-hidden="true">
+  <button type="button" class="hamburger" id="menuClose" style="position:absolute; top:28px; left:32px;" data-i18n-aria-label="menu_close" aria-label="Close menu">
+    <span style="transform:translateY(8px) rotate(45deg);"></span>
+    <span style="opacity:0;"></span>
+    <span style="transform:translateY(-8px) rotate(-45deg);"></span>
+  </button>
+  <ul class="nav-overlay-links">
+    <li><a href="index.html#home" data-i18n="nav_home">Home</a></li>
+    <li><a href="index.html#services" data-i18n="nav_services">Services</a></li>
+    <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+    <li><a href="pricing.html" data-i18n="nav_pricing">Pricing</a></li>
+    <li><a href="index.html#book" data-i18n="nav_book">Book</a></li>
+    <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <section class="pricing-hero">
+    <div class="container">
+      <span class="eyebrow" data-i18n="pricing_hero_title">Pricing</span>
+      <h1 data-i18n="pricing_hero_title">Pricing</h1>
+      <p data-i18n="pricing_hero_lede">Simple, transparent pricing because your pet's care should never come with surprises.</p>
+    </div>
+  </section>
+
+  <nav class="pricing-chips" aria-label="Pricing categories">
+    <a class="pricing-chip" href="#dog-walking" data-i18n="service_walking_title">Dog Walking</a>
+    <a class="pricing-chip" href="#dropin-visits" data-i18n="pricing_dropin_title">Drop-In Visits</a>
+    <a class="pricing-chip" href="#overnight" data-i18n="pricing_overnight_title">Overnight Pet Sitting</a>
+    <a class="pricing-chip" href="#grooming" data-i18n="pricing_grooming_title">Grooming Add-Ons</a>
+    <a class="pricing-chip" href="#other-addons" data-i18n="pricing_other_title">Other Add-Ons</a>
+  </nav>
+
+  <section id="dog-walking" class="pricing-category">
+    <div class="container pricing-category-inner">
+      <h2 data-i18n="service_walking_title">Dog Walking</h2>
+      <div class="pricing-table-wrap">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th data-i18n="pricing_col_service">Service</th>
+              <th data-i18n="pricing_col_price">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="pricing_walk30">30-minute walk</td>
+              <td>€25</td>
+            </tr>
+            <tr>
+              <td data-i18n="pricing_walk60">60-minute walk</td>
+              <td>€35</td>
+            </tr>
+            <tr>
+              <td data-i18n="pricing_extra_dog">Additional dog</td>
+              <td>+€10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="dropin-visits" class="pricing-category">
+    <div class="container pricing-category-inner">
+      <h2 data-i18n="pricing_dropin_title">Drop-In Visits</h2>
+      <p class="pricing-note" data-i18n="pricing_dropin_note">(feeding, playtime, litter/potty, medication administration included)</p>
+
+      <div class="pricing-subgroup">
+        <p class="pricing-subgroup-label" data-i18n="pricing_dogs_label">Dogs:</p>
+        <div class="pricing-table-wrap">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th data-i18n="pricing_col_service">Service</th>
+                <th data-i18n="pricing_col_price">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="pricing_visit30">30-minute visit</td>
+                <td>€20</td>
+              </tr>
+              <tr>
+                <td data-i18n="pricing_visit60">60-minute visit</td>
+                <td>€30</td>
+              </tr>
+              <tr>
+                <td data-i18n="pricing_extra_dog">Additional dog</td>
+                <td>+€10</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="pricing-subgroup">
+        <p class="pricing-subgroup-label" data-i18n="pricing_cats_label">Cats:</p>
+        <div class="pricing-table-wrap">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th data-i18n="pricing_col_service">Service</th>
+                <th data-i18n="pricing_col_price">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="pricing_visit30">30-minute visit</td>
+                <td>€20</td>
+              </tr>
+              <tr>
+                <td data-i18n="pricing_visit60">60-minute visit</td>
+                <td>€25</td>
+              </tr>
+              <tr>
+                <td data-i18n="pricing_extra_cat">Additional cat</td>
+                <td>+€5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="overnight" class="pricing-category">
+    <div class="container pricing-category-inner">
+      <h2 data-i18n="pricing_overnight_title">Overnight Pet Sitting</h2>
+      <p class="pricing-note" data-i18n="pricing_overnight_note">(at client's home)</p>
+      <div class="pricing-table-wrap">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th data-i18n="pricing_col_service">Service</th>
+              <th data-i18n="pricing_col_price">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="pricing_overnight_dog">Overnight stay (dog)</td>
+              <td>€55/night</td>
+            </tr>
+            <tr>
+              <td data-i18n="pricing_overnight_cat">Overnight stay (cat)</td>
+              <td>€45/night</td>
+            </tr>
+            <tr>
+              <td data-i18n="pricing_extra_dog">Additional dog</td>
+              <td>+€40</td>
+            </tr>
+            <tr>
+              <td data-i18n="pricing_extra_cat">Additional cat</td>
+              <td>+€20</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="grooming" class="pricing-category">
+    <div class="container pricing-category-inner">
+      <h2 data-i18n="pricing_grooming_title">Grooming Add-Ons</h2>
+
+      <div class="pricing-subgroup">
+        <p class="pricing-subgroup-label" data-i18n="pricing_bath_dog_label">Bath (dog, by size):</p>
+        <div class="pricing-table-wrap">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th data-i18n="pricing_col_size">Size</th>
+                <th data-i18n="pricing_col_price">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="pricing_size_small">Small (up to 10kg)</td>
+                <td>€20</td>
+              </tr>
+              <tr>
+                <td data-i18n="pricing_size_medium">Medium (10–25kg)</td>
+                <td>€25</td>
+              </tr>
+              <tr>
+                <td data-i18n="pricing_size_large">Large (25–40kg)</td>
+                <td>€30</td>
+              </tr>
+              <tr>
+                <td data-i18n="pricing_size_xl">Extra Large (40kg+)</td>
+                <td>€35</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="pricing-subgroup">
+        <div class="pricing-table-wrap">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th data-i18n="pricing_col_service">Service</th>
+                <th data-i18n="pricing_col_price">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="pricing_bath_cat">Bath (cat, any size)</td>
+                <td>€18</td>
+              </tr>
+              <tr>
+                <td data-i18n="pricing_nail_dog">Nail trim (dog)</td>
+                <td>€12</td>
+              </tr>
+              <tr>
+                <td data-i18n="pricing_nail_cat">Nail trim (cat)</td>
+                <td>€10</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="other-addons" class="pricing-category">
+    <div class="container pricing-category-inner">
+      <h2 data-i18n="pricing_other_title">Other Add-Ons</h2>
+      <div class="pricing-table-wrap">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th data-i18n="pricing_col_service">Service</th>
+              <th data-i18n="pricing_col_price">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="pricing_holiday">Holiday surcharge</td>
+              <td>+€15/day</td>
+            </tr>
+            <tr>
+              <td data-i18n="pricing_vet_transport">Vet visit / medication pickup transport</td>
+              <td>+€5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing-cta">
+    <div class="container">
+      <p data-i18n="pricing_cta_lede_2">Book now and travel knowing they're in good hands.</p>
+      <div class="btn-pair">
+        <a class="btn btn-primary" href="https://www.timetopet.com/portal/dedierenclub/create-account" target="_blank" rel="noopener" data-i18n="cta_new_client_btn">New Client? Book Now</a>
+        <a class="btn btn-outline" href="https://www.timetopet.com/portal/dedierenclub" target="_blank" rel="noopener" data-i18n="cta_returning_client_btn">Returning Client? Log In</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p data-i18n="footer_text">De Dierenclub Pet Sitting · Serving Amsterdam, Netherlands 🐾</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
