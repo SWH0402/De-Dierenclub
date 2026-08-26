@@ -69,7 +69,9 @@ const translations = {
   placeholder_email: { en: "you@example.com", nl: "jij@voorbeeld.com", es: "tu@ejemplo.com" },
   placeholder_message: { en: "Tell me about your pet and what you're looking for...", nl: "Vertel me over je huisdier en wat je zoekt...", es: "Cuéntame sobre tu mascota y qué estás buscando..." },
   submit_btn: { en: "Send Inquiry", nl: "Verstuur Aanvraag", es: "Enviar Consulta" },
-  form_note: { en: "Thanks! This form doesn't send yet — connect it to an email service or form backend to start receiving inquiries.", nl: "Bedankt! Dit formulier verstuurt nog niets — koppel het aan een e-mailservice of formulierback-end om aanvragen te ontvangen.", es: "¡Gracias! Este formulario aún no envía nada — conéctalo a un servicio de correo o backend de formularios para empezar a recibir consultas." },
+  form_sending: { en: "Sending...", nl: "Versturen...", es: "Enviando..." },
+  form_note: { en: "Thanks! Your message has been sent — I'll get back to you soon.", nl: "Bedankt! Je bericht is verzonden — ik neem snel contact met je op.", es: "¡Gracias! Tu mensaje ha sido enviado — me pondré en contacto contigo pronto." },
+  form_error: { en: "Something went wrong — please try again, or email me directly at stephanie@dedierenclub.nl.", nl: "Er ging iets mis — probeer het opnieuw, of mail me rechtstreeks op stephanie@dedierenclub.nl.", es: "Algo salió mal — inténtalo de nuevo, o escríbeme directamente a stephanie@dedierenclub.nl." },
   whatsapp_btn: { en: "Message on WhatsApp", nl: "Bericht via WhatsApp", es: "Mensaje por WhatsApp" },
 
   pricing_hero_title: { en: "Pricing", nl: "Prijzen", es: "Precios" },
@@ -173,9 +175,32 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', function (event) {
     event.preventDefault();
+    const form = event.target;
     const note = document.getElementById('formNote');
-    note.textContent = translations.form_note[currentLang()];
-    event.target.reset();
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    submitBtn.disabled = true;
+    note.textContent = translations.form_sending[currentLang()];
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    })
+      .then((response) => {
+        if (response.ok) {
+          note.textContent = translations.form_note[currentLang()];
+          form.reset();
+        } else {
+          note.textContent = translations.form_error[currentLang()];
+        }
+      })
+      .catch(() => {
+        note.textContent = translations.form_error[currentLang()];
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+      });
   });
 }
 
