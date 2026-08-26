@@ -1,7 +1,7 @@
 const defaultPageMeta = {
   en: {
     title: "De Dierenclub Pet Sitting | Trusted Dog Walker & Pet Sitter in Amsterdam",
-    description: "Reliable, loving pet sitting and dog walking in Amsterdam. Perfect for expats and locals who want a trusted, English-speaking pet sitter for their dog or cat."
+    description: "Professional pet sitting and dog walking in Amsterdam Zuid. Dog walking, overnight pet sitting, drop-in visits and grooming. 58 five-star reviews. Book online."
   },
   nl: {
     title: "De Dierenclub Pet Sitting | Betrouwbare Hondenuitlaatservice & Huisdierenoppas Amsterdam",
