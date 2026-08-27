@@ -915,6 +915,14 @@ img {
   margin: 0 auto 28px;
 }
 
+.pricing-note-overnight {
+  max-width: 700px;
+}
+
+.pricing-note-bath {
+  max-width: 640px;
+}
+
 #dropin-visits .pricing-note {
   margin-bottom: 4px;
 }

@@ -99,7 +99,7 @@ const translations = {
 
   pricing_grooming_title: { en: "Grooming Add-Ons", nl: "Extra Vachtverzorging", es: "Servicios de Peluquería" },
   pricing_bath_dog_label: { en: "Bath (dog, by size):", nl: "Bad (hond, op grootte):", es: "Baño (perro, según tamaño):" },
-  pricing_bath_dog_note: { en: "(Pre-bath brush, shampoo and rinse, blow dry, finishing brush, ear wipe, and deodorising spritz. One-on-one in your pet's own home. No crates, no waiting, no stress.)", nl: "(Borstelen voor het bad, shampoo en spoelen, föhnen, afwerkborstel, oren schoonvegen en een verfrissende spray. Persoonlijke aandacht, bij jou thuis. Geen kooien, geen wachten, geen stress.)", es: "(Cepillado previo al baño, champú y enjuague, secado, cepillado final, limpieza de oídos y spray desodorizante. Atención individual en la propia casa de tu mascota. Sin jaulas, sin esperas, sin estrés.)" },
+  pricing_bath_dog_note: { en: "(Shampoo and rinse, blow dry, brush, ear wipe, and deodorising spritz.)", nl: "(Shampoo en spoelen, föhnen, borstelen, oren schoonvegen en een verfrissende spray.)", es: "(Champú y enjuague, secado, cepillado, limpieza de oídos y spray desodorizante.)" },
   pricing_size_small: { en: "Small (up to 10kg)", nl: "Klein (tot 10kg)", es: "Pequeño (hasta 10kg)" },
   pricing_size_medium: { en: "Medium (10–25kg)", nl: "Middelgroot (10-25kg)", es: "Mediano (10–25kg)" },
   pricing_size_large: { en: "Large (25–40kg)", nl: "Groot (25-40kg)", es: "Grande (25–40kg)" },
