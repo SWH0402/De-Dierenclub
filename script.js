@@ -39,13 +39,13 @@ const translations = {
   services_lede: { en: "Thoughtful, hands-on care because your pet deserves nothing less.", nl: "Zorgzame, persoonlijke aandacht, omdat je huisdier niet minder verdient.", es: "Cuidado atento y personal, porque tu mascota no merece menos." },
 
   service_walking_title: { en: "Dog Walking", nl: "Hondenuitlaatservice", es: "Paseo de Perros" },
-  service_walking_desc: { en: "Fresh air, exercise, and plenty of sniffing time. Solo or small-group walks tailored to your dog's energy level and pace.", nl: "Frisse lucht, beweging en volop tijd om te snuffelen. Individuele of kleine groepswandelingen, afgestemd op het energieniveau en tempo van je hond.", es: "Aire fresco, ejercicio y mucho tiempo para olfatear. Paseos individuales o en grupos pequeños, adaptados al nivel de energía y ritmo de tu perro." },
+  service_walking_desc: { en: "Fresh air, exercise, and plenty of sniffing time. Private walks for your dog or dogs only, tailored to their energy level and pace.", nl: "Frisse lucht, beweging en volop tijd om te snuffelen. Privéwandelingen voor alleen jouw hond(en), afgestemd op hun energieniveau en tempo.", es: "Aire fresco, ejercicio y mucho tiempo para olfatear. Paseos privados solo para tu perro o perros, adaptados a su nivel de energía y ritmo." },
   service_petsitting_title: { en: "Pet Sitting", nl: "Huisoppas", es: "Cuidado en Casa" },
   service_petsitting_desc: { en: "Overnight stays at your home so your pets keep their normal routine. Ideal for longer trips or pets who do best with constant company.", nl: "Overnachtingen bij jou thuis, zodat je huisdieren hun normale routine behouden. Ideaal voor langere reizen of huisdieren die het best gedijen bij voortdurend gezelschap.", es: "Estancias nocturnas en tu casa para que tus mascotas mantengan su rutina normal. Ideal para viajes más largos o mascotas que están mejor con compañía constante." },
   service_dropin_title: { en: "Drop-in Visits", nl: "Bezoekjes aan huis", es: "Visitas a Domicilio" },
-  service_dropin_desc: { en: "A friendly check-in at home for feeding, fresh water, playtime, and cuddles — great for cats, puppies, or a midday visit.", nl: "Een gezellig bezoekje thuis voor eten, vers water, speeltijd en knuffels — ideaal voor katten, puppy's of een tussendoortje in de middag.", es: "Una visita amistosa en casa para alimentar, agua fresca, tiempo de juego y mimos — perfecta para gatos, cachorros o una visita a mediodía." },
+  service_dropin_desc: { en: "At home check-in for feeding, water, playtime, and medication. Great for cats, puppies, or a midday visit.", nl: "Bezoekje thuis voor eten, water, speeltijd en medicatie. Ideaal voor katten, puppy's of een tussendoortje in de middag.", es: "Visita en casa para alimentar, agua, tiempo de juego y medicación. Perfecta para gatos, cachorros o una visita a mediodía." },
   service_grooming_title: { en: "Grooming", nl: "Vachtverzorging", es: "Peluquería" },
-  service_grooming_desc: { en: "Bath (at your home) and nail trims to keep your pet clean and comfortable — convenient, low-stress grooming without ever leaving the house.", nl: "Bad (bij jou thuis) en nagels knippen om je huisdier schoon en comfortabel te houden — handige, stressvrije verzorging zonder de deur uit te hoeven.", es: "Baño (en tu casa) y corte de uñas para mantener a tu mascota limpia y cómoda — servicios de aseo convenientes y de bajo estrés sin salir de casa." },
+  service_grooming_desc: { en: "Bath and nail trims at your home, keeping your pet clean and comfortable without the stress of leaving the house.", nl: "Bad en nagels knippen bij jou thuis, zodat je huisdier schoon en comfortabel blijft zonder de stress van de deur uit te moeten.", es: "Baño y corte de uñas en tu casa, manteniendo a tu mascota limpia y cómoda sin el estrés de salir de casa." },
   service_book_btn: { en: "Book Now", nl: "Boek Nu", es: "Reservar Ahora" },
 
   about_title: { en: "About Me", nl: "Over Mij", es: "Sobre Mí" },
@@ -80,6 +80,7 @@ const translations = {
   pricing_col_price: { en: "Price", nl: "Prijs", es: "Precio" },
   pricing_col_size: { en: "Size", nl: "Grootte", es: "Tamaño" },
 
+  pricing_walking_note: { en: "(Private walks for your dog or dogs only. No other dogs from other households.)", nl: "(Privéwandelingen voor alleen jouw hond(en). Geen andere honden van andere huishoudens.)", es: "(Paseos privados solo para tu perro o perros. Sin otros perros de otros hogares.)" },
   pricing_walk30: { en: "30-minute walk", nl: "Wandeling van 30 minuten", es: "Paseo de 30 minutos" },
   pricing_walk60: { en: "60-minute walk", nl: "Wandeling van 60 minuten", es: "Paseo de 60 minutos" },
   pricing_extra_dog: { en: "Additional dog", nl: "Extra hond", es: "Perro adicional" },

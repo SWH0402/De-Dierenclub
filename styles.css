@@ -846,7 +846,7 @@ img {
 
 .pricing-hero h1 {
   font-size: clamp(2.4rem, 5vw, 3.2rem);
-  margin-bottom: 14px;
+  margin-bottom: 0;
 }
 
 .pricing-hero p {
@@ -903,7 +903,7 @@ img {
 
 #dog-walking h2 {
   margin-top: 4px;
-  margin-bottom: 36px;
+  margin-bottom: 8px;
 }
 
 .pricing-note {
