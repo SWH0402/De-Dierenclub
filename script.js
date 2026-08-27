@@ -109,7 +109,7 @@ const translations = {
   pricing_nail_dog: { en: "Nail trim (dog)", nl: "Nagels knippen (hond)", es: "Corte de uñas (perro)" },
   pricing_nail_cat: { en: "Nail trim (cat)", nl: "Nagels knippen (kat)", es: "Corte de uñas (gato)" },
 
-  pricing_other_title: { en: "Other Add-Ons", nl: "Overige Extra's", es: "Otros Extras" },
+  pricing_other_title: { en: "Additional Fees", nl: "Extra Kosten", es: "Cargos Adicionales" },
   pricing_holiday: { en: "Holiday surcharge", nl: "Feestdagentoeslag", es: "Recargo por días festivos" },
   pricing_vet_transport: { en: "Vet visit / medication pickup transport", nl: "Vervoer dierenarts / medicatie ophalen", es: "Transporte a veterinario / recogida de medicación" },
 
