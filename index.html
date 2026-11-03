@@ -57,13 +57,21 @@
     <!-- Placeholder hero photo; swap the background-image in .hero-media (styles.css) for a different dog/cat photo any time. -->
     <div class="hero-media"></div>
     <div class="hero-overlay"></div>
-    <div class="hero-inner">
-      <h1>
-        <span class="hero-line" data-i18n="hero_headline_1">Your home.</span>
-        <span class="hero-line" data-i18n="hero_headline_2">Their comfort.</span>
-        <span class="hero-line" data-i18n="hero_headline_3">Your peace of mind.</span>
-      </h1>
+
+    <div class="hero-badge" aria-hidden="true">
+      <span class="hero-badge-line1" data-i18n="hero_badge_line1">Save More</span>
+      <span class="hero-badge-line2"><span data-i18n="hero_badge_line2_prefix">with</span> <span translate="no">Paw Pass</span></span>
     </div>
+
+    <div class="hero-promo-panel">
+      <h2 data-i18n="hero_promo_heading">Members Save on Every Visit</h2>
+      <p data-i18n="hero_promo_copy">Join Paw Pass for better rates, or refer a friend and you both save €15.</p>
+      <a class="btn btn-cream" href="pricing.html#paw-pass" data-i18n="hero_promo_btn">View Paw Pass Plans</a>
+      <a class="hero-promo-secondary" href="pricing.html#refer">
+        <span data-i18n="hero_promo_secondary">Refer a Friend</span> →
+      </a>
+    </div>
+
     <button type="button" class="scroll-indicator" data-i18n-aria-label="scroll_indicator_label" aria-label="Scroll to explore">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M5 13l7 7 7-7"/></svg>
     </button>
@@ -191,6 +199,23 @@
             </svg>
             <span data-i18n="reviews_google_link">Leave a Google Review</span>
           </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pawpass-teaser reveal-target">
+    <div class="container">
+      <div class="pawpass-teaser-grid">
+        <div class="service-card reveal-target">
+          <h3><span data-i18n="pawpass_join_prefix">Join</span> <span translate="no">Paw Pass</span></h3>
+          <p data-i18n="teaser_pawpass_desc">Save on every visit and get a few perks along the way.</p>
+          <a class="btn-book" href="pricing.html#paw-pass" data-i18n="teaser_pawpass_btn">View Plans</a>
+        </div>
+        <div class="service-card reveal-target">
+          <h3 data-i18n="teaser_refer_title">Refer a Friend</h3>
+          <p data-i18n="teaser_refer_desc">Earn €15 credit for every friend who books.</p>
+          <a class="btn-book" href="pricing.html#refer" data-i18n="teaser_refer_btn">Refer Now</a>
         </div>
       </div>
     </div>

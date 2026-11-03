@@ -30,9 +30,12 @@ const translations = {
   menu_open: { en: "Open menu", nl: "Menu openen", es: "Abrir menú" },
   menu_close: { en: "Close menu", nl: "Menu sluiten", es: "Cerrar menú" },
 
-  hero_headline_1: { en: "Your home.", nl: "Jouw huis.", es: "Tu hogar." },
-  hero_headline_2: { en: "Their comfort.", nl: "Hun comfort.", es: "Su comodidad." },
-  hero_headline_3: { en: "Your peace of mind.", nl: "Jouw gemoedsrust.", es: "Tu tranquilidad." },
+  hero_badge_line1: { en: "Save More", nl: "Bespaar Meer", es: "Ahorra Más" },
+  hero_badge_line2_prefix: { en: "with", nl: "met", es: "con" },
+  hero_promo_heading: { en: "Members Save on Every Visit", nl: "Leden Besparen op Elk Bezoek", es: "Los Miembros Ahorran en Cada Visita" },
+  hero_promo_copy: { en: "Join Paw Pass for better rates, or refer a friend and you both save €15.", nl: "Word lid van Paw Pass voor betere tarieven, of verwijs een vriend en jullie besparen allebei €15.", es: "Únete a Paw Pass para mejores tarifas, o recomienda a un amigo y ambos ahorran €15." },
+  hero_promo_btn: { en: "View Paw Pass Plans", nl: "Bekijk Paw Pass Opties", es: "Ver Planes de Paw Pass" },
+  hero_promo_secondary: { en: "Refer a Friend", nl: "Verwijs een Vriend", es: "Refiere a un Amigo" },
   scroll_indicator_label: { en: "Scroll to explore", nl: "Scroll om te ontdekken", es: "Desplázate para explorar" },
 
   services_title: { en: "Services", nl: "Diensten", es: "Servicios" },
@@ -116,6 +119,43 @@ const translations = {
   pricing_cta_lede_2: { en: "Book now and travel knowing they're in good hands.", nl: "Boek nu en reis met een gerust hart, wetende dat ze in goede handen zijn.", es: "Reserva ahora y viaja sabiendo que está en buenas manos." },
   book_title: { en: "Book a Visit", nl: "Boek een Afspraak", es: "Reservar una Visita" },
   book_lede: { en: "Whether it's your first time booking or you're a familiar face, getting started takes less than a minute.", nl: "Of het nu je eerste boeking is of je een bekend gezicht bent, je bent binnen een minuut klaar.", es: "Ya sea tu primera reserva o ya me conoces, empezar toma menos de un minuto." },
+
+  pawpass_eyebrow: { en: "Membership", nl: "Lidmaatschap", es: "Membresía" },
+  pawpass_lede: { en: "Better rates and little extras for pets who are part of the family.", nl: "Betere tarieven en kleine extra's voor huisdieren die bij het gezin horen.", es: "Mejores tarifas y pequeños extras para mascotas que son parte de la familia." },
+  pawpass_per_month: { en: " / month", nl: " / maand", es: " / mes" },
+  pawpass_join_prefix: { en: "Join", nl: "Word lid van", es: "Únete a" },
+  pawpass_popular_badge: { en: "Most Popular", nl: "Meest Gekozen", es: "Más Popular" },
+
+  pawpass_essential_title: { en: "Essential", nl: "Essentieel", es: "Esencial" },
+  pawpass_essential_perk1: { en: "10% off all services", nl: "10% korting op alle diensten", es: "10% de descuento en todos los servicios" },
+  pawpass_essential_perk2: { en: "Priority booking", nl: "Voorrang bij boekingen", es: "Reservas prioritarias" },
+  pawpass_essential_perk3: { en: "No holiday surcharge on stays under 3 days", nl: "Geen feestdagentoeslag bij verblijven korter dan 3 dagen", es: "Sin recargo por días festivos en estancias de menos de 3 días" },
+
+  pawpass_plus_title: { en: "Plus", nl: "Plus", es: "Plus" },
+  pawpass_plus_perk1: { en: "15% off all services", nl: "15% korting op alle diensten", es: "15% de descuento en todos los servicios" },
+  pawpass_plus_perk2: { en: "1 free nail trim per month", nl: "1 gratis nagelknipbeurt per maand", es: "1 corte de uñas gratis al mes" },
+  pawpass_plus_perk3: { en: "Holiday surcharge waived", nl: "Feestdagentoeslag vervalt", es: "Recargo por días festivos eliminado" },
+  pawpass_plus_perk4: { en: "Early access to holiday dates", nl: "Eerder toegang tot feestdagen", es: "Acceso anticipado a fechas festivas" },
+
+  pawpass_premier_title: { en: "Premier", nl: "Premier", es: "Premier" },
+  pawpass_premier_perk1: { en: "20% off all services", nl: "20% korting op alle diensten", es: "20% de descuento en todos los servicios" },
+  pawpass_premier_perk2: { en: "1 free 30 minute walk per month", nl: "1 gratis wandeling van 30 minuten per maand", es: "1 paseo gratis de 30 minutos al mes" },
+  pawpass_premier_perk3: { en: "Holiday surcharge always waived", nl: "Feestdagentoeslag vervalt altijd", es: "Recargo por días festivos siempre eliminado" },
+  pawpass_premier_perk4: { en: "Priority same day availability", nl: "Voorrang bij beschikbaarheid op dezelfde dag", es: "Prioridad en disponibilidad el mismo día" },
+  pawpass_premier_perk5: { en: "Monthly welfare update with photos", nl: "Maandelijkse update over het welzijn met foto's", es: "Actualización mensual de bienestar con fotos" },
+
+  refer_heading: { en: "Love us? Share us.", nl: "Blij met ons? Vertel het verder.", es: "¿Te encantamos? Cuéntaselo a otros." },
+  refer_copy: { en: "Refer a friend and you both get €15 off your next booking.", nl: "Verwijs een vriend door en jullie krijgen allebei €15 korting op de volgende boeking.", es: "Recomienda a un amigo y ambos obtienen €15 de descuento en su próxima reserva." },
+  refer_step1: { en: "1. Tell a friend", nl: "1. Vertel het een vriend", es: "1. Cuéntale a un amigo" },
+  refer_step2: { en: "2. They mention your name", nl: "2. Die noemt jouw naam", es: "2. Él o ella menciona tu nombre" },
+  refer_step3: { en: "3. You both save €15", nl: "3. Jullie besparen allebei €15", es: "3. Ambos ahorran €15" },
+  refer_btn: { en: "Refer a Friend", nl: "Verwijs een Vriend", es: "Refiere a un Amigo" },
+
+  teaser_pawpass_desc: { en: "Save on every visit and get a few perks along the way.", nl: "Bespaar op elk bezoek en krijg daarbij nog wat extra's.", es: "Ahorra en cada visita y obtén algunos extras adicionales." },
+  teaser_pawpass_btn: { en: "View Plans", nl: "Bekijk Opties", es: "Ver Planes" },
+  teaser_refer_title: { en: "Refer a Friend", nl: "Verwijs een Vriend", es: "Refiere a un Amigo" },
+  teaser_refer_desc: { en: "Earn €15 credit for every friend who books.", nl: "Verdien €15 tegoed voor elke vriend die boekt.", es: "Gana €15 de crédito por cada amigo que reserve." },
+  teaser_refer_btn: { en: "Refer Now", nl: "Verwijs Nu", es: "Refiere Ahora" },
 
   footer_text: { en: "Serving Amsterdam, Netherlands 🐾", nl: "Actief in Amsterdam, Nederland 🐾", es: "Sirviendo a Ámsterdam, Países Bajos 🐾" }
 };

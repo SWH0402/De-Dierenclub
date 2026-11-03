@@ -420,11 +420,7 @@ img {
   position: relative;
   height: 100vh;
   min-height: 560px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
-  text-align: center;
 }
 
 .hero-media {
@@ -442,24 +438,97 @@ img {
   background: linear-gradient(180deg, rgba(22, 43, 35, 0.45) 0%, rgba(20, 38, 31, 0.35) 45%, rgba(15, 30, 24, 0.65) 100%);
 }
 
-.hero-inner {
-  position: relative;
+.hero-badge {
+  position: absolute;
   z-index: 2;
-  max-width: 780px;
-  padding: 0 28px;
-}
-
-.hero h1 {
-  font-size: clamp(2.4rem, 6vw, 4.6rem);
-  line-height: 1.08;
-  color: var(--white);
+  top: 14%;
+  left: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   opacity: 0;
   transform: translateY(22px);
   animation: heroIn 1s var(--ease) 0.3s forwards;
 }
 
-.hero-line {
+.hero-badge-line1 {
+  background-color: var(--forest);
+  color: var(--white);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3.6vw, 2.6rem);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 14px 28px;
+  box-shadow: var(--shadow);
+}
+
+.hero-badge-line2 {
+  background-color: var(--sage);
+  color: var(--white);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(1.1rem, 2.4vw, 1.6rem);
+  padding: 8px 24px;
+  margin-left: 24px;
+  margin-top: -6px;
+  box-shadow: var(--shadow-soft);
+}
+
+.hero-promo-panel {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  max-width: 460px;
+  width: calc(100% - 56px);
+  margin: 28px;
+  padding: 36px 36px 32px;
+  background-color: rgba(22, 43, 35, 0.82);
+  backdrop-filter: blur(4px);
+  text-align: left;
+  opacity: 0;
+  transform: translateY(22px);
+  animation: heroIn 1s var(--ease) 0.5s forwards;
+}
+
+.hero-promo-panel h2 {
+  color: var(--white);
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+  margin-bottom: 10px;
+}
+
+.hero-promo-panel p {
+  color: rgba(249, 246, 241, 0.88);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.hero-promo-panel .btn {
   display: block;
+  text-align: center;
+}
+
+.hero-promo-secondary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  color: var(--bg);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(249, 246, 241, 0.4);
+  padding-bottom: 2px;
+  width: fit-content;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.hero-promo-secondary:hover {
+  color: var(--white);
+  border-color: var(--bg);
 }
 
 @keyframes heroIn {
@@ -467,7 +536,8 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero h1 {
+  .hero-badge,
+  .hero-promo-panel {
     animation: none;
     opacity: 1;
     transform: none;
@@ -989,6 +1059,183 @@ img {
   font-size: 1.05rem;
 }
 
+/* ---------- Paw Pass ---------- */
+.paw-pass {
+  background-color: var(--bg);
+  padding-bottom: 72px;
+}
+
+.pawpass-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.pawpass-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px 32px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+
+.pawpass-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lift);
+}
+
+.pawpass-featured {
+  border: 2px solid var(--forest);
+  box-shadow: var(--shadow);
+}
+
+.pawpass-featured:hover {
+  box-shadow: var(--shadow-lift);
+}
+
+.pawpass-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--forest);
+  color: var(--white);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.pawpass-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.pawpass-price {
+  margin-bottom: 24px;
+}
+
+.pawpass-price-amount {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--forest);
+}
+
+.pawpass-price-period {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.pawpass-perks {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.pawpass-perks li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.pawpass-perks li:last-child {
+  margin-bottom: 0;
+}
+
+.pawpass-perks li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--sage);
+  font-weight: 700;
+}
+
+.pawpass-join {
+  width: 100%;
+  margin-top: auto;
+}
+
+/* ---------- Refer a Friend ---------- */
+.refer {
+  background-color: var(--bg);
+}
+
+.refer-panel {
+  max-width: 560px;
+  margin: 0 auto;
+  background-color: var(--forest);
+  text-align: center;
+  border-radius: var(--radius);
+  padding: 56px 40px;
+  box-shadow: var(--shadow);
+}
+
+.refer-panel h2 {
+  color: var(--bg);
+  margin-bottom: 16px;
+}
+
+.refer-panel p {
+  color: rgba(249, 246, 241, 0.85);
+  margin-bottom: 28px;
+}
+
+.refer-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.refer-step {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(249, 246, 241, 0.35);
+  color: var(--bg);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.btn-cream {
+  background-color: var(--bg);
+  color: var(--forest);
+}
+
+.btn-cream:hover {
+  background-color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+/* ---------- Homepage Paw Pass / Refer teaser ---------- */
+.pawpass-teaser {
+  background-color: var(--bg);
+  padding: 64px 0;
+}
+
+.pawpass-teaser-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .service-grid {
@@ -1013,6 +1260,14 @@ img {
   .reviews-grid {
     grid-template-columns: 1fr;
   }
+
+  .pawpass-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pawpass-teaser-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1026,6 +1281,26 @@ img {
 
   .floating-brand {
     font-size: 0.85rem;
+  }
+
+  .hero-badge {
+    top: 10%;
+    left: 20px;
+  }
+
+  .hero-badge-line2 {
+    margin-left: 14px;
+  }
+
+  .hero-promo-panel {
+    max-width: none;
+    width: calc(100% - 32px);
+    margin: 16px;
+    padding: 24px 24px 22px;
+  }
+
+  .hero .scroll-indicator {
+    display: none;
   }
 
   .section {
@@ -1042,6 +1317,14 @@ img {
 
   .contact-form {
     padding: 24px;
+  }
+
+  .pawpass-card {
+    padding: 32px 24px;
+  }
+
+  .refer-panel {
+    padding: 40px 24px;
   }
 
   .pricing-hero {
